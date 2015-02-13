@@ -56,7 +56,7 @@
         self.fileNameLabel.stringValue = [[fileURL path] lastPathComponent];
         
         NSSize iconSize = [self iconImageSize:[fileURL path]];
-        NSString *imageSizeString = [NSString stringWithFormat:@"%d x %d", (int)iconSize.width, (int)iconSize.height];
+        NSString *imageSizeString = [NSString stringWithFormat:@"Image Size: %d x %d", (int)iconSize.width, (int)iconSize.height];
         self.imageSizeLabel.stringValue = [self.imageSizeLabel.stringValue stringByAppendingString:imageSizeString];
         
         if ([[self.popupButton itemArray] count] > 1) {
