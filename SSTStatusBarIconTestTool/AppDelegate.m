@@ -57,7 +57,7 @@
         
         NSSize iconSize = [self iconImageSize:[fileURL path]];
         NSString *imageSizeString = [NSString stringWithFormat:@"Image Size: %d x %d", (int)iconSize.width, (int)iconSize.height];
-        self.imageSizeLabel.stringValue = [self.imageSizeLabel.stringValue stringByAppendingString:imageSizeString];
+        self.imageSizeLabel.stringValue = imageSizeString;
         
         if ([[self.popupButton itemArray] count] > 1) {
             NSMenuItem *menuItem = [self.popupButton itemAtIndex:0];
